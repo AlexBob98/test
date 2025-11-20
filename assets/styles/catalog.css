@@ -14,7 +14,6 @@
   height: clamp(11.4rem, 55vh, 23.7rem);
   background: var(--white);
   border-radius: 2.4rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,6 +21,7 @@
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
   overflow: hidden;
+  border: 1px solid #ecf3f5;
 }
 
 .catalog__card--sale::after {
@@ -35,9 +35,9 @@
   border-radius: 50%;
 }
 
-.catalog__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+/* TODO: стоит обсудить с дизайнером поведение на ховере */
+.catalog__card:hover .catalog__image {
+  transform: scale(0.95);
 }
 
 .catalog__card-content {
@@ -95,6 +95,7 @@
   right: 0;
   z-index: 1;
   width: clamp(11.4rem, 16vw, 15rem);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .catalog__image img {
@@ -176,9 +177,8 @@ img.sale {
     gap: 0.2rem;
   }
 
-  .catalog__card:hover {
-    transform: translateY(0);
-    box-shadow: none;
+  .catalog__card:hover .catalog__image {
+    transform: none;
   }
 
   .catalog .main-button {

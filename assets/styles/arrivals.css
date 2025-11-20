@@ -167,16 +167,15 @@
 }
 
 .product-card__add-to-cart.in-cart {
-  gap: clamp(3rem, 4vw, 6rem);
+  gap: clamp(3rem, 4vw, 6.6rem);
   background: #eeeff1;
   color: var(--dark);
 }
 
 .cart-increment,
 .cart-decrement {
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
+  width: 2.4rem;
+  height: 2.4rem;
   cursor: pointer;
   user-select: none;
   transition: filter 0.3s ease-out;
@@ -198,7 +197,7 @@
 .cart-count {
   text-align: center;
   order: 2;
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
   font-weight: 600;
 }
 
