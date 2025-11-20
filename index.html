@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+  >
+  <link rel="icon" href="./assets/images/logo/favicon.svg" type="image/svg+xml">
+  <script type="module" defer src="./script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <title>Главная страница - ЭЛКОМ</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <button class="header__geo" aria-expanded="false" aria-haspopup="listbox">
+            <span class="header__icon icon geo"></span>
+            <span class="text-16-r">Петропавловск-Камчатский</span>
+          </button>
+          <div class="header__logo">
+            <a href="/"><img class="logo" src="./assets/images/logo/logo.svg" alt="Логотип компании"></a>
+          </div>
+          <nav class="header__nav-top" aria-label="Дополнительная навигация">
+            <ul class="header__nav-list">
+              <li><a href="#" class="header__order-btn main-button">Отправить заявку</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Покупателям</a></li>
+              <li><a href="#">Тех. поддержка</a></li>
+            </ul>
+          </nav>
+          <div class="header__contact">
+            <span class="header__icon icon question"></span>
+            <a href="tel:+71111111111" class="header__phone text-16-sb">+ 7 (111) 111-11-11</a>
+          </div>
+        </div>
+        <div class="header__middle">
+          <div class="header__logo">
+            <a href="/"><img class="logo" src="./assets/images/logo/logo.svg" alt="Логотип компании"></a>
+          </div>
+
+          <div class="header__search">
+            <form class="search__form" role="search">
+              <input type="text" placeholder="Поиск по названию, артикулу" aria-label="Поиск">
+              <button class="search__btn" type="submit" aria-label="Найти"></button>
+            </form>
+          </div>
+
+          <div class="header__user-actions">
+            <a href="#" class="header__action">
+              <div class="header__indicator">
+                <span class="header__icon icon heart"></span>
+                <span data-badge="wish" class="header__count badge">0</span>
+              </div>
+              <span class="text-16-r-20">Избранное</span>
+            </a>
+            <a href="#" class="header__action">
+              <div class="header__indicator">
+                <span class="header__icon icon bookmark"></span>
+                <span data-badge="bookmark" class="header__count badge">0</span>
+              </div>
+              <span class="text-16-r-20">Спецификации</span>
+            </a>
+            <a href="#" class="header__action">
+              <div class="header__indicator">
+                <span class="header__icon icon compare"></span>
+                <span data-badge="compare" class="header__count badge">0</span>
+              </div>
+              <span class="text-16-r-20">Сравнить</span>
+            </a>
+            <a href="#" class="header__action">
+              <div class="header__indicator">
+                <span class="header__icon icon archive"></span>
+                <span data-badge="order" class="header__count badge">0</span>
+              </div>
+              <span class="text-16-r-20">Заказы</span>
+            </a>
+            <a href="#" class="header__action cart">
+              <div class="header__indicator">
+                <span class="header__icon icon cart"></span>
+                <span data-badge="cart" class="header__count badge">0</span>
+              </div>
+              <span class="text-16-r-20">Корзина</span>
+            </a>
+            <div class="header__user">
+              <a href="#" class="header__auth">
+                <span class="header__icon icon user"></span>
+              </a>
+              <span class="header__username text-14-b" data-logged-in="false">Алекснадрийский</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <button class="header__catalog-btn main-button" aria-expanded="false">
+              <span class="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+              </span>
+            <span class="text-20-b">Каталог</span>
+          </button>
+          <nav class="header__nav-bottom" aria-label="Основное меню">
+            <ul class="header__nav-list">
+              <li><a href="#" class="header__order-btn main-button">Отправить заявку</a></li>
+              <li><a href="#"><span class="header__icon icon sliders"></span><span>Конфигураторы</span></a></li>
+              <li><a href="#"><span class="header__icon icon tool"></span><span>Услуги</span></a></li>
+              <li><a href="#"><span class="header__icon icon pin"></span><span>Закрепить проект</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="hero__inner">
+          <button class="hero__nav hero__nav--prev" aria-label="Предыдущий баннер">
+            <span class="icon arrow"></span>
+          </button>
+          <button class="hero__nav hero__nav--next" aria-label="Следующий баннер">
+            <span class="icon arrow"></span>
+          </button>
+
+          <div class="hero__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="hero__slide swiper-slide">
+                <div class="hero__content">
+                  <div class="hero__text">
+                    <p class="hero__title">Демо текст и демо баннер</p>
+                    <p class="hero__subtitle">10.000+ товаров с&nbsp;гарантией</p>
+                    <p class="hero__caption">Для тех, кто знает, что такое качество</p>
+                  </div>
+
+                  <div class="hero__images">
+                    <div class="hero__image-back"></div>
+                    <img src="./assets/images/products/p-3.webp" alt="Товар 1" class="hero__image-main">
+                    <img src="./assets/images/products/p-6.webp" alt="Товар 2" class="hero__image-secondary">
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__slide swiper-slide">
+                <div class="hero__content">
+                  <div class="hero__text">
+                    <p class="hero__title">Демо текст и демо баннер</p>
+                    <p class="hero__subtitle">10.000+ товаров с&nbsp;гарантией</p>
+                    <p class="hero__caption">Для тех, кто знает, что такое качество</p>
+                  </div>
+
+                  <div class="hero__images">
+                    <div class="hero__image-back"></div>
+                    <img src="./assets/images/products/p-3.webp" alt="Товар 1" class="hero__image-main">
+                    <img src="./assets/images/products/p-6.webp" alt="Товар 2" class="hero__image-secondary">
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__slide swiper-slide">
+                <div class="hero__content">
+                  <div class="hero__text">
+                    <p class="hero__title">Демо текст и демо баннер</p>
+                    <p class="hero__subtitle">10.000+ товаров с&nbsp;гарантией</p>
+                    <p class="hero__caption">Для тех, кто знает, что такое качество</p>
+                  </div>
+
+                  <div class="hero__images">
+                    <div class="hero__image-back"></div>
+                    <img src="./assets/images/products/p-3.webp" alt="Товар 1" class="hero__image-main">
+                    <img src="./assets/images/products/p-6.webp" alt="Товар 2" class="hero__image-secondary">
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__slide swiper-slide">
+                <div class="hero__content">
+                  <div class="hero__text">
+                    <p class="hero__title">Демо текст и демо баннер</p>
+                    <p class="hero__subtitle">10.000+ товаров с&nbsp;гарантией</p>
+                    <p class="hero__caption">Для тех, кто знает, что такое качество</p>
+                  </div>
+
+                  <div class="hero__images">
+                    <div class="hero__image-back"></div>
+                    <img src="./assets/images/products/p-3.webp" alt="Товар 1" class="hero__image-main">
+                    <img src="./assets/images/products/p-6.webp" alt="Товар 2" class="hero__image-secondary">
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__slide swiper-slide">
+                <div class="hero__content">
+                  <div class="hero__text">
+                    <p class="hero__title">Демо текст и демо баннер</p>
+                    <p class="hero__subtitle">10.000+ товаров с&nbsp;гарантией</p>
+                    <p class="hero__caption">Для тех, кто знает, что такое качество</p>
+                  </div>
+
+                  <div class="hero__images">
+                    <div class="hero__image-back"></div>
+                    <img src="./assets/images/products/p-3.webp" alt="Товар 1" class="hero__image-main">
+                    <img src="./assets/images/products/p-6.webp" alt="Товар 2" class="hero__image-secondary">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-bullet__controls">
+            <button class="slider-bullet__nav slider-bullet__nav--prev" aria-label="Предыдущий">
+              <span class="icon chevron-left"></span>
+            </button>
+            <div class="slider-bullets swiper-pagination"></div>
+            <button class="slider-bullet__nav slider-bullet__nav--next" aria-label="Следующий">
+              <span class="icon chevron-right"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <div data-scrollbar class="catalog__grid">
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Электродвигатели</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-1.webp" alt="Электродвигатели" class="electromotors">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Насосы</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-2.webp" alt="Насосы" class="pumps">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Низковольтное и&nbsp;высоковольнтное оборудование</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-3.webp" alt="Низковольтное и высоковольнтное оборудование" class="voltage">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Частотные преобразователи и&nbsp;устройства плавного&nbsp;пуска</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-4.webp" alt="Частотные преобразователи и устройства плавного пуска" class="frequency-converters">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Редукторы и&nbsp;мотор&nbsp;редукторы</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-5.webp" alt="Редукторы и мотор редукторы" class="reductors">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Подшипники</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-6.webp" alt="Подшипники" class="bearings">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Климатическое оборудование</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-7.webp" alt="Климатическое оборудование" class="climatics">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Тали</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-8.webp" alt="Тали" class="tali">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Электрощитовое оборудование</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-9.webp" alt="Электрощитовое оборудование" class="electric-panel">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">ДЭС И ГПЭС</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-10.webp" alt="ДЭС И ГПЭС" class="des-gpes">
+              </div>
+            </article>
+
+            <article class="catalog__card">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">Автоматические насосные установки</h3>
+                <p class="catalog__count">15 137 товаров</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-11.webp" alt="Автоматические насосные установки" class="automatic-pumps">
+              </div>
+            </article>
+
+            <article class="catalog__card catalog__card--sale">
+              <div class="catalog__card-content">
+                <h3 class="catalog__category text-16-m-20">
+                  Товары <span class="catalog__category-highlight">со скидкой</span>
+                </h3>
+                <p class="catalog__count">2 341 товар</p>
+              </div>
+              <div class="catalog__image">
+                <img src="./assets/images/products/p-12.webp" alt="Товары со скидкой" class="sale">
+              </div>
+            </article>
+          </div>
+
+          <a href="#" class="catalog__link main-button">Перейти в каталог</a>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="services-block">
+            <div class="section-heading">
+              <h2 class="section-heading__title">Услуги</h2>
+              <a href="#" class="btn-view-all">Смотреть все<span class="icon view-all"></span></a>
+            </div>
+            <div class="services__grid">
+              <div class="services__item active">
+                <span class="services__number">01</span>
+                <p class="services__text text-16-m-20">Энергоаудит промышленных предприятий</p>
+              </div>
+              <div class="services__item">
+                <span class="services__number">02</span>
+                <p class="services__text text-16-m-20">Технический аудит промышленных&nbsp;предприятий</p>
+              </div>
+              <div class="services__item">
+                <span class="services__number">03</span>
+                <p class="services__text text-16-m-20">Предпроектное обследование объектов энергоснабжения</p>
+              </div>
+              <div class="services__item">
+                <span class="services__number">04</span>
+                <p class="services__text text-16-m-20">Пусконаладочные работы электрооборудования</p>
+              </div>
+              <div class="services__item">
+                <span class="services__number">05</span>
+                <p class="services__text text-16-m-20">Шеф-монтажные работы электрооборудования</p>
+              </div>
+              <div class="services__item">
+                <span class="services__number">06</span>
+                <p class="services__text text-16-m-20">Гарантийное и постгарантийное обслуживание электрооборудования</p>
+              </div>
+              <div class="services__item">
+                <span class="services__number">07</span>
+                <p class="services__text text-16-m-20">Ремонт промышленного электрооборудования</p>
+              </div>
+              <div class="services__item">
+                <span class="services__number">08</span>
+                <p class="services__text text-16-m-20">Отдельные услуги</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-arrivals">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="section-heading__title">Новые Поступления</h2>
+            <a href="#" class="btn-view-all">Смотреть все<span class="icon view-all"></span></a>
+          </div>
+
+          <div class="new-arrivals__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__top">
+                    <button data-action="bookmark" class="product-card__icon icon bookmark" aria-label="В спецификацию"></button>
+                    <div class="product-card__actions">
+                      <button data-action="wish" class="product-card__action icon heart" aria-label="В избранное"></button>
+                      <button data-action="compare" class="product-card__action icon compare" aria-label="Сравнить"></button>
+                    </div>
+                  </div>
+
+                  <div class="product-card__image">
+                    <img src="./assets/images/products/p-slider.webp" alt="Электродвигатель">
+                    <div class="product-card__dots">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__info">
+                    <div class="product-card__article">
+                      <span class="text-14-r">01.01.215925</span>
+                      <button class="icon copy" aria-label="Копировать артикул"></button>
+                    </div>
+
+                    <h3 class="product-card__title">
+                      Эл.дв. 5АИ 100 L4 УХЛ2 4/1500 IM 1081 Эл.Мех., 10.000А100 L4 Ul223 супер длинное названиеееее
+                    </h3>
+
+                    <div class="product-card__availability">
+                      <span class="product-card__status text-14-b">Наличие:</span>
+                      <p class="text-16-r-20">Санкт-Петербург: <span class="in-stock">5 дней</span></p>
+                      <p class="text-16-r-20">Другие склады: <span class="in-stock">1 шт</span></p>
+                    </div>
+
+                    <div class="product-card__price">
+                      <del class="product-card__price-old text-14-r">14 200 456,00 ₽</del>
+                      <span class="product-card__price-new text-24-sb">12 200 456,00 ₽</span>
+                    </div>
+
+                    <div class="product-card__btn">
+                      <button data-action="cart" class="product-card__add-to-cart main-button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__top">
+                    <button data-action="bookmark" class="product-card__icon icon bookmark" aria-label="В спецификацию"></button>
+                    <div class="product-card__actions">
+                      <button data-action="wish" class="product-card__action icon heart" aria-label="В избранное"></button>
+                      <button data-action="compare" class="product-card__action icon compare" aria-label="Сравнить"></button>
+                    </div>
+                  </div>
+
+                  <div class="product-card__image">
+                    <img src="./assets/images/products/p-slider.webp" alt="Электродвигатель">
+                    <div class="product-card__dots">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__info">
+                    <div class="product-card__article">
+                      <span class="text-14-r">01.01.215925</span>
+                      <button class="icon copy" aria-label="Копировать артикул"></button>
+                    </div>
+
+                    <h3 class="product-card__title">
+                      Эл.дв. 5АИ 100 L4 УХЛ2 4/1500 IM 1081 Эл.Мех., 10.000А100 L4 Ul223 супер длинное названиеееее
+                    </h3>
+
+                    <div class="product-card__availability">
+                      <span class="product-card__status text-14-b">Наличие:</span>
+                      <p class="text-16-r-20">Санкт-Петербург: <span class="in-stock">5 дней</span></p>
+                      <p class="text-16-r-20">Другие склады: <span class="in-stock">1 шт</span></p>
+                    </div>
+
+                    <div class="product-card__price">
+                      <del class="product-card__price-old text-14-r">14 200 456,00 ₽</del>
+                      <span class="product-card__price-new text-24-sb">12 200 456,00 ₽</span>
+                    </div>
+
+                    <div class="product-card__btn">
+                      <button data-action="cart" class="product-card__add-to-cart main-button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__top">
+                    <button data-action="bookmark" class="product-card__icon icon bookmark" aria-label="В спецификацию"></button>
+                    <div class="product-card__actions">
+                      <button data-action="wish" class="product-card__action icon heart" aria-label="В избранное"></button>
+                      <button data-action="compare" class="product-card__action icon compare" aria-label="Сравнить"></button>
+                    </div>
+                  </div>
+
+                  <div class="product-card__image">
+                    <img src="./assets/images/products/p-slider.webp" alt="Электродвигатель">
+                    <div class="product-card__dots">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__info">
+                    <div class="product-card__article">
+                      <span class="text-14-r">01.01.215925</span>
+                      <button class="icon copy" aria-label="Копировать артикул"></button>
+                    </div>
+
+                    <h3 class="product-card__title">
+                      Эл.дв. 5АИ 100 L4 УХЛ2 4/1500 IM 1081 Эл.Мех., 10.000А100 L4 Ul223 супер длинное названиеееее
+                    </h3>
+
+                    <div class="product-card__availability">
+                      <span class="product-card__status text-14-b">Наличие:</span>
+                      <p class="text-16-r-20">Санкт-Петербург: <span class="in-stock">5 дней</span></p>
+                      <p class="text-16-r-20">Другие склады: <span class="in-stock">1 шт</span></p>
+                    </div>
+
+                    <div class="product-card__price">
+                      <del class="product-card__price-old text-14-r">14 200 456,00 ₽</del>
+                      <span class="product-card__price-new text-24-sb">12 200 456,00 ₽</span>
+                    </div>
+
+                    <div class="product-card__btn">
+                      <button data-action="cart" class="product-card__add-to-cart main-button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__top">
+                    <button data-action="bookmark" class="product-card__icon icon bookmark" aria-label="В спецификацию"></button>
+                    <div class="product-card__actions">
+                      <button data-action="wish" class="product-card__action icon heart" aria-label="В избранное"></button>
+                      <button data-action="compare" class="product-card__action icon compare" aria-label="Сравнить"></button>
+                    </div>
+                  </div>
+
+                  <div class="product-card__image">
+                    <img src="./assets/images/products/p-slider.webp" alt="Электродвигатель">
+                    <div class="product-card__dots">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__info">
+                    <div class="product-card__article">
+                      <span class="text-14-r">01.01.215925</span>
+                      <button class="icon copy" aria-label="Копировать артикул"></button>
+                    </div>
+
+                    <h3 class="product-card__title">
+                      Эл.дв. 5АИ 100 L4 УХЛ2 4/1500 IM 1081 Эл.Мех., 10.000А100 L4 Ul223 супер длинное названиеееее
+                    </h3>
+
+                    <div class="product-card__availability">
+                      <span class="product-card__status text-14-b">Наличие:</span>
+                      <p class="text-16-r-20">Санкт-Петербург: <span class="in-stock">5 дней</span></p>
+                      <p class="text-16-r-20">Другие склады: <span class="in-stock">1 шт</span></p>
+                    </div>
+
+                    <div class="product-card__price">
+                      <del class="product-card__price-old text-14-r">14 200 456,00 ₽</del>
+                      <span class="product-card__price-new text-24-sb">12 200 456,00 ₽</span>
+                    </div>
+
+                    <div class="product-card__btn">
+                      <button data-action="cart" class="product-card__add-to-cart main-button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__top">
+                    <button data-action="bookmark" class="product-card__icon icon bookmark" aria-label="В спецификацию"></button>
+                    <div class="product-card__actions">
+                      <button data-action="wish" class="product-card__action icon heart" aria-label="В избранное"></button>
+                      <button data-action="compare" class="product-card__action icon compare" aria-label="Сравнить"></button>
+                    </div>
+                  </div>
+
+                  <div class="product-card__image">
+                    <img src="./assets/images/products/p-slider.webp" alt="Электродвигатель">
+                      <div class="product-card__dots">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__info">
+                    <div class="product-card__article">
+                      <span class="text-14-r">01.01.215925</span>
+                      <button class="icon copy" aria-label="Копировать артикул"></button>
+                    </div>
+
+                    <h3 class="product-card__title">
+                      Эл.дв. 5АИ 100 L4 УХЛ2 4/1500 IM 1081 Эл.Мех., 10.000А100 L4 Ul223 супер длинное названиеееее
+                    </h3>
+
+                    <div class="product-card__availability">
+                      <span class="product-card__status text-14-b">Наличие:</span>
+                      <p class="text-16-r-20">Санкт-Петербург: <span class="in-stock">5 дней</span></p>
+                      <p class="text-16-r-20">Другие склады: <span class="in-stock">1 шт</span></p>
+                    </div>
+
+                    <div class="product-card__price">
+                      <del class="product-card__price-old text-14-r">14 200 456,00 ₽</del>
+                      <span class="product-card__price-new text-24-sb">12 200 456,00 ₽</span>
+                    </div>
+
+                    <div class="product-card__btn">
+                      <button data-action="cart" class="product-card__add-to-cart main-button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="product-card__top">
+                    <button data-action="bookmark" class="product-card__icon icon bookmark" aria-label="В спецификацию"></button>
+                    <div class="product-card__actions">
+                      <button data-action="wish" class="product-card__action icon heart" aria-label="В избранное"></button>
+                      <button data-action="compare" class="product-card__action icon compare" aria-label="Сравнить"></button>
+                    </div>
+                  </div>
+
+                  <div class="product-card__image">
+                    <img src="./assets/images/products/p-slider.webp" alt="Электродвигатель">
+                    <div class="product-card__dots">
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+
+                  <div class="product-card__info">
+                    <div class="product-card__article">
+                      <span class="text-14-r">01.01.215925</span>
+                      <button class="icon copy" aria-label="Копировать артикул"></button>
+                    </div>
+
+                    <h3 class="product-card__title">
+                      Эл.дв. 5АИ 100 L4 УХЛ2 4/1500 IM 1081 Эл.Мех., 10.000А100 L4 Ul223 супер длинное названиеееее
+                    </h3>
+
+                    <div class="product-card__availability">
+                      <span class="product-card__status text-14-b">Наличие:</span>
+                      <p class="text-16-r-20">Санкт-Петербург: <span class="in-stock">5 дней</span></p>
+                      <p class="text-16-r-20">Другие склады: <span class="in-stock">1 шт</span></p>
+                    </div>
+
+                    <div class="product-card__price">
+                      <del class="product-card__price-old text-14-r">14 200 456,00 ₽</del>
+                      <span class="product-card__price-new text-24-sb">12 200 456,00 ₽</span>
+                    </div>
+
+                    <div class="product-card__btn">
+                      <button data-action="cart" class="product-card__add-to-cart main-button">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-bullet__controls">
+              <button class="slider-bullet__nav slider-bullet__nav--prev" aria-label="Предыдущий">
+                <span class="icon chevron-left"></span>
+              </button>
+              <div class="slider-bullets"></div>
+              <button class="slider-bullet__nav slider-bullet__nav--next" aria-label="Следующий">
+                <span class="icon chevron-right"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <nav class="mobile-nav" aria-label="Мобильная навигация">
+      <ul class="mobile-nav__list">
+        <li>
+          <a href="/" class="mobile-nav__link">
+            <div class="header__indicator">
+              <span class="mobile__icon icon home"></span>
+            </div>
+            <span>Главная</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-nav__link">
+            <div class="header__indicator">
+              <span class="mobile__icon icon list"></span>
+            </div>
+            <span>Каталог</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-nav__link">
+            <div class="header__indicator">
+                <span class="mobile__icon icon heart"></span>
+                <span data-badge="wish" class="header__count badge">0</span>
+            </div>
+            <span>Избранное</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-nav__link">
+            <div class="header__indicator">
+              <span class="mobile__icon icon cart"></span>
+              <span data-badge="cart" class="header__count badge">0</span>
+            </div>
+            <span>Корзина</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="mobile-nav__link">
+            <div class="header__indicator">
+              <span class="mobile__icon icon user"></span>
+              <span class="header__user badge"></span>
+            </div>
+            <span>Профиль</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
