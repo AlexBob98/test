@@ -1,0 +1,78 @@
+@import url("./normalize.css");
+@import url("./fonts.css");
+@import url("./buttons.css");
+@import url("./icons.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./catalog.css");
+@import url("./services.css");
+@import url("./arrivals.css");
+@import url("./mobile-nav.css");
+@import url("./scrollbar.css");
+
+:root {
+  /* FONTS */
+  --font-family: "Manrope", Arial, sans-serif;
+
+  /* COLORS */
+  --gradient-green: linear-gradient(
+    167.11deg,
+    #66a5ab 70.48%,
+    rgba(0, 0, 0, 0.9) 169.79%
+  );
+  --dot-gradient: linear-gradient(78.23deg, #336af7 -60.47%, #009fae 58.62%);
+  --svg-blue: brightness(0) saturate(100%) invert(33%) sepia(70%)
+    saturate(3847%) hue-rotate(217deg) brightness(99%) contrast(95%);
+  --svg-green: brightness(0) saturate(100%) invert(24%) sepia(54%)
+    saturate(2211%) hue-rotate(158deg) brightness(98%) contrast(105%);
+  --svg-gray: brightness(0) saturate(100%) invert(81%) sepia(0%) saturate(2748%)
+    hue-rotate(357deg) brightness(100%) contrast(65%);
+  --svg-dark: brightness(0) saturate(100%) invert(10%) sepia(3%) saturate(15%)
+    hue-rotate(12deg) brightness(96%) contrast(91%);
+  --gray: #f6f6f6;
+  --green: #006973;
+  --orange: #f46b25;
+  --white: #ffffff;
+  --blue: #336af7;
+  --gray-second: #eeeff1;
+  --dark: #222222;
+  --light-green: #66a5ab;
+  --light-gray: #b3b3b3;
+  --light-green: #0acb57;
+  --bullet-gray: #c3c3c3;
+}
+
+html {
+  font-size: 62.5%; /* 62.5% от 16px = 10px */
+}
+
+body {
+  background: var(--gray);
+  font-family: var(--font-family);
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* учитываем 14px скроллбар справа */
+.container {
+  margin-left: clamp(1.6rem, 11vw, 20rem);
+  margin-right: clamp(1.6rem, 11vw, 18.4rem);
+}
+
+/* @media (max-width: 1550px) {
+  .container {
+    margin-left: max(7rem, 10%);
+    margin-right: max(7rem, 8%);
+  }
+} */
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: clamp(1.6rem, 4vw, 20rem);
+    margin-right: clamp(1.6rem, 4vw, 18.4rem);
+  }
+}

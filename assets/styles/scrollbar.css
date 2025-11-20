@@ -1,0 +1,29 @@
+[data-scrollbar] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+[data-scrollbar] .catalog__grid::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar {
+  height: 4px;
+  background: #EEEFF1;
+  border-radius: 2px;
+  position: relative;
+  margin-top: 0.8rem;
+  display: none;
+}
+
+.custom-scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #B3B3B3;
+  border-radius: 2px;
+  cursor: pointer;
+}

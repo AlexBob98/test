@@ -1,0 +1,144 @@
+.icon {
+  display: flex;
+  background-repeat: no-repeat;
+}
+
+.header__icon,
+.btn-view-all span {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.header__user-actions .header__icon,
+.product-card__icon,
+.product-card__action,
+.product-card__article .icon,
+.mobile-nav .icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.mobile-nav .icon {
+  filter: var(--svg-gray);
+}
+
+.slider-bullet__nav .icon {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.icon.arrow {
+  height: 4rem;
+  width: 4rem;
+}
+
+.header__nav-bottom .header__icon {
+  height: 1.5em;
+  width: 2rem;
+}
+
+.icon.geo {
+  background-image: url(../icons/geo.svg);
+}
+
+.icon.question {
+  background-image: url(../icons/question.svg);
+}
+
+.icon.heart {
+  background-image: url(../icons/heart.svg);
+}
+
+.icon.add {
+  transition: background-image 0.3s ease-out;
+}
+
+.icon.heart.add {
+  background-image: url(../icons/heart-fill.svg);
+}
+
+.icon.bookmark {
+  background-image: url(../icons/bookmark.svg);
+}
+
+.icon.bookmark.add {
+  background-image: url(../icons/bookmark-fill.svg);
+}
+
+.icon.compare {
+  background-image: url(../icons/compare.svg);
+}
+
+.icon.compare.add {
+  background-image: url(../icons/compare-fill.svg);
+}
+
+.icon.archive {
+  background-image: url(../icons/archive.svg);
+}
+
+.icon.cart {
+  background-image: url(../icons/cart.svg);
+}
+
+.icon.user {
+  background-image: url(../icons/user.svg);
+}
+
+.icon.sliders {
+  background-image: url(../icons/sliders.svg);
+}
+
+.icon.tool {
+  background-image: url(../icons/tool.svg);
+}
+
+.icon.pin {
+  background-image: url(../icons/pin.svg);
+}
+
+.icon.arrow {
+  background-image: url(../icons/arrow.svg);
+}
+
+.hero__nav--next .icon.arrow {
+  transform: rotate(180deg);
+}
+
+.icon.copy {
+  background-image: url(../icons/copy.svg);
+}
+
+.icon.view-all {
+  background-image: url(../icons/view-all-arrow.svg);
+}
+
+.icon.chevron-left {
+  background-image: url(../icons/chevron-left.svg);
+}
+
+.icon.chevron-right {
+  background-image: url(../icons/chevron-right.svg);
+}
+
+.icon.home {
+  background-image: url(../icons/home.svg);
+}
+
+.icon.list {
+  background-image: url(../icons/list.svg);
+}
+
+.icon.plus {
+  background-image: url(../icons/cart-plus.svg);
+}
+
+.icon.minus {
+  background-image: url(../icons/cart-minus.svg);
+}
+
+@media (max-width: 768px) {
+  .slider-bullet__nav .icon {
+    transform: scale(0.5);
+  }
+}

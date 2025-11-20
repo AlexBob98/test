@@ -1,0 +1,133 @@
+.main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: background 0.3s ease-out;
+  white-space: nowrap;
+}
+
+.product-card__add-to-cart.main-button {
+  background: var(--green);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.product-card__add-to-cart.main-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #336af7 0%, #009fae 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  border-radius: 2rem;
+}
+
+.product-card__add-to-cart.main-button:not(.in-cart):hover::after {
+  opacity: 1;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-heading__title {
+  color: var(--dark);
+  font-size: clamp(2rem, 2vw, 4rem);
+  font-weight: 700;
+  font-weight: 700;
+}
+
+.btn-view-all {
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.3s ease-out, background 0.3s ease-out;
+}
+
+.btn-view-all:hover {
+  color: var(--blue);
+}
+
+.btn-view-all:hover .icon {
+  filter: var(--svg-blue);
+}
+
+.slider-bullet__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(13.8rem, 18vw, 30.8rem);
+  margin: 0 auto;
+}
+
+.slider-bullet__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 55;
+  transition: filter 0.3s ease-out;
+}
+
+.slider-bullet__nav:hover {
+  filter: var(--svg-green);
+}
+
+.slider-bullets {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  padding: 0.2rem;
+}
+
+.slider-bullets .swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--bullet-gray);
+  border-radius: 50%;
+  opacity: 1;
+  transition: width 0.2s ease-out, background 0.2s ease-out;
+}
+
+.slider-bullets .swiper-pagination-bullet-active {
+  width: 5.6rem;
+  background: var(--dot-gradient);
+  border-radius: 1rem;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 12px !important;
+}
+
+@media (max-width: 768px) {
+  .btn-view-all {
+    gap: 0.3rem;
+  }
+
+  .slider-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 1.6rem;
+  }
+
+  .slider-bullets .swiper-pagination-bullet {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 1rem;
+  }
+
+  .slider-bullets {
+    gap: 0;
+  }
+}

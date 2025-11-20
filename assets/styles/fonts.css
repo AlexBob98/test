@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.text-14-r {
+  font-family: "Manrope";
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.text-14-b {
+  font-family: "Manrope";
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.text-16-r {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.text-16-sb {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.text-16-r-20 {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.text-16-m-20 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.text-20-b {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.text-24-sb {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
