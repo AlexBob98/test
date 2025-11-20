@@ -221,9 +221,6 @@
 }
 
 .header__auth {
-  font-size: 2rem;
-  color: #333;
-  text-decoration: none;
   background: var(--gray-second);
   padding: 1rem;
   border-radius: 1.2rem;

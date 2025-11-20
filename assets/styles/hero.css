@@ -14,7 +14,7 @@
   align-items: center;
   background: var(--white);
   border-radius: 50%;
-  border: 0.7px solid #eeeff1;
+  border: 0.7px solid var(--gray-second);
   cursor: pointer;
   display: flex;
   height: 4rem;

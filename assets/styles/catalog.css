@@ -21,7 +21,7 @@
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
   overflow: hidden;
-  border: 1px solid #ecf3f5;
+  border: 1px solid var(--gray-300);
 }
 
 .catalog__card--sale::after {

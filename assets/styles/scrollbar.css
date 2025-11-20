@@ -11,7 +11,7 @@
 
 .custom-scrollbar {
   height: 4px;
-  background: #EEEFF1;
+  background: var(--gray-second);
   border-radius: 2px;
   position: relative;
   margin-top: 0.8rem;
@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  background: #B3B3B3;
+  background: var(--light-gray);
   border-radius: 2px;
   cursor: pointer;
 }
