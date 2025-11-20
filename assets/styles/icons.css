@@ -1,6 +1,7 @@
 .icon {
   display: flex;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__icon,

@@ -15,11 +15,7 @@
   --font-family: "Manrope", Arial, sans-serif;
 
   /* COLORS */
-  --gradient-green: linear-gradient(
-    167.11deg,
-    #66a5ab 70.48%,
-    rgba(0, 0, 0, 0.9) 169.79%
-  );
+  --gradient-green: linear-gradient(167.11deg,#66a5ab 70.48%,rgba(0, 0, 0, 0.9) 169.79%);
   --dot-gradient: linear-gradient(78.23deg, #336af7 -60.47%, #009fae 58.62%);
   --svg-blue: brightness(0) saturate(100%) invert(33%) sepia(70%)
     saturate(3847%) hue-rotate(217deg) brightness(99%) contrast(95%);
@@ -38,6 +34,7 @@
   --dark: #222222;
   --light-green: #66a5ab;
   --light-gray: #b3b3b3;
+  --gray-300: #ECF3F5;
   --light-green: #0acb57;
   --bullet-gray: #c3c3c3;
 }
@@ -62,13 +59,6 @@ body {
   margin-left: clamp(1.6rem, 11vw, 20rem);
   margin-right: clamp(1.6rem, 11vw, 18.4rem);
 }
-
-/* @media (max-width: 1550px) {
-  .container {
-    margin-left: max(7rem, 10%);
-    margin-right: max(7rem, 8%);
-  }
-} */
 
 @media (max-width: 768px) {
   .container {

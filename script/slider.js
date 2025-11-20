@@ -59,6 +59,7 @@ export default class InitSwiperSlider {
         320: {
           slidesPerView: 2,
           spaceBetween: 8,
+          allowTouchMove: true,
         },
         600: {
           slidesPerView: 2,
@@ -73,6 +74,7 @@ export default class InitSwiperSlider {
         },
         1680: {
           slidesPerView: 5,
+          allowTouchMove: false,
         },
       },
     });
